@@ -10,6 +10,9 @@ import {
 } from './estiloDoCartao';
 
 function Cartao(props) {
+    const { nameCard, cardNumber, cardValidity, cvcCard, paymentMethodCard } =
+        props;
+
     return (
         <DesignDoCartao>
             <LogoLabenu
@@ -17,15 +20,15 @@ function Cartao(props) {
                 src="https://uploads-ssl.webflow.com/5e790d30d198385b09366d8f/6418d88006d6c5b61efb9e69_Fogo-Cima.svg"
             />
 
-            <NumeroDoCartao>{props.numero}</NumeroDoCartao>
+            <NumeroDoCartao>{cardNumber}</NumeroDoCartao>
 
-            <Nome>{props.nome}</Nome>
+            <Nome>{nameCard}</Nome>
 
-            <CVC>cvc:{props.cvc}</CVC>
+            <CVC>cvc:{cvcCard}</CVC>
 
-            <FormaDePagamento> $ {props.pagamento}</FormaDePagamento>
+            <FormaDePagamento> $ {paymentMethodCard}</FormaDePagamento>
 
-            <Validade>validade: {props.validade}</Validade>
+            <Validade>validade: {cardValidity}</Validade>
 
             <LogoMasterCard
                 id="logo-master"

@@ -10,7 +10,7 @@ export const Form = styled.form`
 `;
 
 export const Select = styled.select`
-    width: 20%;
+    width: 30%;
     padding: 1vh;
     border-radius: 10px;
     background-color: transparent;
