@@ -53,6 +53,24 @@ function PaginaDoCartao() {
         setPaymentMethodCard(event.target.value);
     };
 
+    const clearFields = (event) => {
+        event.preventDefault();
+        // form
+        setNameInput('');
+        setCardNumberInput('');
+        setValidityInput('');
+        setCvcInput('');
+        setPaymentMethod('');
+        // card
+        setnameCard('Amanda Polari');
+        setCardNumber('3652 6589 7458 1254');
+        setCardValidity('131');
+        setCvcCard('03/29');
+        setPaymentMethodCard('Crédito');
+        // msg
+        alert('Seu cartão foi cadastrado com sucesso!');
+    };
+
     return (
         <LayoutDaPagina>
             {/* Passe as variáveis de estado para o Cartão. Use Props. */}
@@ -65,6 +83,7 @@ function PaginaDoCartao() {
             />
 
             {/* Chame o Componente Formulário Aqui */}
+            {/* Passe a função de controle de input e variável de estado para o formulário. Para isso use Props */}
             <Formulario
                 nameInput={nameInput}
                 cardNumberInput={cardNumberInput}
@@ -76,8 +95,8 @@ function PaginaDoCartao() {
                 changeCvcValue={changeCvcValue}
                 paymentMethod={paymentMethod}
                 changePaymentMethod={changePaymentMethod}
+                clearFields={clearFields}
             />
-            {/* Passe a função de controle de input e variável de estado para o formulário. Para isso use Props */}
         </LayoutDaPagina>
     );
 }

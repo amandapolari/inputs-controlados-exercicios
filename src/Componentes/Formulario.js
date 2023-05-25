@@ -3,7 +3,6 @@ import React from 'react';
 import { Button, Form, Input, Label, Select } from './estiloDoFormulario';
 
 const Formulario = (props) => {
-
     const {
         nameInput,
         changeNameValue,
@@ -15,11 +14,12 @@ const Formulario = (props) => {
         changeCvcValue,
         paymentMethod,
         changePaymentMethod,
+        clearFields,
     } = props;
 
     return (
         <div>
-            <Form>
+            <Form onSubmit={clearFields}>
                 <Select value={paymentMethod} onChange={changePaymentMethod}>
                     <option disabled value={''}>
                         Selecione
