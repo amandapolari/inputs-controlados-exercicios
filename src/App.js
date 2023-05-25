@@ -8,6 +8,9 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     font-family: Helvetica;
   }
+  body {
+    background-color:lightgray ;
+  }
 `;
 
 function App() {
