@@ -1,5 +1,4 @@
-
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 import PaginaDoCartao from './Pagina/PaginaDoCartao';
 
 const GlobalStyles = createGlobalStyle`
@@ -9,15 +8,18 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     font-family: Helvetica;
   }
-`
+  body {
+    background-color:lightgray ;
+  }
+`;
 
 function App() {
-  return (
-    <>
-      <GlobalStyles />
-      <PaginaDoCartao/>
-    </>
-  );
+    return (
+        <>
+            <GlobalStyles />
+            <PaginaDoCartao />
+        </>
+    );
 }
 
 export default App;
