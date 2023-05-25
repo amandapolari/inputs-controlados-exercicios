@@ -1,4 +1,5 @@
 import Cartao from '../Componentes/Cartao';
+import Formulario from '../Componentes/Formulario';
 import { LayoutDaPagina } from './estiloDaPaginaDoCartao';
 
 function PaginaDoCartao() {
@@ -18,6 +19,7 @@ function PaginaDoCartao() {
             />
 
             {/* Chame o Componente Formulário Aqui */}
+            <Formulario />
             {/* Passe a função de controle de input e variável de estado para o formulário. Para isso use Props */}
         </LayoutDaPagina>
     );
