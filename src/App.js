@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
     font-family: Helvetica;
   }
   body {
-    background-color:lightgray ;
+    background-color:#edf6f9 ;
   }
 `;
 
