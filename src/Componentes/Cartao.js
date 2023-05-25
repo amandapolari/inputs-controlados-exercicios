@@ -24,11 +24,11 @@ function Cartao(props) {
 
             <Nome>{nameCard}</Nome>
 
-            <CVC>cvc:{cvcCard}</CVC>
+            <CVC>CVC: {cvcCard}</CVC>
 
             <FormaDePagamento> $ {paymentMethodCard}</FormaDePagamento>
 
-            <Validade>validade: {cardValidity}</Validade>
+            <Validade>Val: {cardValidity}</Validade>
 
             <LogoMasterCard
                 id="logo-master"

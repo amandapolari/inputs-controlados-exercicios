@@ -16,8 +16,8 @@ function PaginaDoCartao() {
 
     const [nameCard, setnameCard] = useState('Amanda Polari');
     const [cardNumber, setCardNumber] = useState('3652 6589 7458 1254');
-    const [cardValidity, setCardValidity] = useState('131');
-    const [cvcCard, setCvcCard] = useState('03/29');
+    const [cardValidity, setCardValidity] = useState('03/29');
+    const [cvcCard, setCvcCard] = useState('131');
     const [paymentMethodCard, setPaymentMethodCard] = useState('Crédito');
 
     // declare os estados aqui
